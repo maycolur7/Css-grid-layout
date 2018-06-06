@@ -1,0 +1,30 @@
+body {
+    font-family: arial;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    /** con template, resumimos las dos anteriores (filas / columnas)**/
+    height: 100vh;
+    grid-gap: 2px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 100px);
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.item {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid black;
+    transition: .6s;
+}
+
+.item:hover {
+    background: yellow;
+    transition: .4s;
+}
